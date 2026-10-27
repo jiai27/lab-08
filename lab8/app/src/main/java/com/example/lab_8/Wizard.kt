@@ -27,13 +27,10 @@ class Wizard(val name: String, var mana: Int, var spellPower: Int) {
     }
 
     fun train(){
-        /*
-        skeleton
-        if mana >= 5
-            increase spellPower
-            decrease mana
-        else
-            do nothing
-        */
+       if (mana >= 5){
+           spellPower +=1
+           mana -= 5
+       }
+       return      //no else needed, nothing happens
     }
 }
